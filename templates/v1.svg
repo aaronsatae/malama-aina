@@ -1,0 +1,26 @@
+<svg width="1050" height="1050" xmlns="http://www.w3.org/2000/svg">
+    <image href="{body}" x="0" y="0" width="1050" height="1050">
+        <title>몸통</title>
+    </image>
+    <image href="{weapon}" x="50" y="55" width="349" height="995">
+        <title>무기</title>
+    </image>
+    <image href="{head}" x="0" y="0" width="1050" height="1050">
+        <title>머리통</title>
+    </image>
+    <image href="{eyebrow}" x="256" y="307" width="315" height="124">
+        <title>눈썹</title>
+    </image>
+    <image href="{eyesAndNose}" x="253" y="395" width="322" height="169">
+        <title>눈코</title>
+    </image>
+    <image href="{hair}" x="103" y="67" width="908" height="850">
+        <title>머리카락</title>
+    </image>
+    <image href="{mouth}" x="309" y="564" width="222" height="168">
+        <title>입</title>
+    </image>
+    <image href="{rightHand}" x="0" y="0" width="1050" height="1050">
+        <title>오른손</title>
+    </image>
+</svg>
