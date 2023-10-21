@@ -47,7 +47,7 @@ function pickImage(images) {
 const eyebrows = await getImages(path.join(componentsBasePath, 'eyebrow'));
 const eyesAndNoses = await getImages(path.join(componentsBasePath, 'eyesAndNose'));
 const hairs = await getImages(path.join(componentsBasePath, 'hair'));
-const necklaces = await getImages(path.join(componentsBasePath, 'neckless'));
+const necklaces = await getImages(path.join(componentsBasePath, 'necklace'));
 const weapons = await getImages(path.join(componentsBasePath, 'weapon'));
 const headAccessories = await getImages(path.join(componentsBasePath, 'headAccessory'));
 const clothesList = await getImages(path.join(componentsBasePath, 'clothing'));

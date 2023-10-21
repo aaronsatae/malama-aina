@@ -9,7 +9,7 @@
         <title>무기</title>
     </image>
     <image href="{head}" x="0" y="0" width="1050" height="1050">
-        <title>머리통</title>
+        <title>머리</title>
     </image>
     <image href="{facePaint}" x="0" y="0" width="1050" height="1050">
         <title>페인팅</title>
