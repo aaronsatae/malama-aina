@@ -29,7 +29,7 @@
     <image href="{necklace}" x="0" y="0" width="1050" height="1050">
         <title>목장식</title>
     </image>
-    <image href="{faceAccessory}" x="0" y="0" width="1050" height="1050">
+    <image href="{headAccessory}" x="0" y="0" width="1050" height="1050">
         <title>얼굴장식</title>
     </image>
     <image href="{hand}" x="0" y="0" width="1050" height="1050">
