@@ -2,7 +2,7 @@ const imageTypes = [
     "clothing", "mouth", "eyesAndNose", "facePaint", "weapon", "eyebrow", "hair", "necklace", "headAccessory"
 ];
 
-const imageBasePath = "https://aaronsatae.github.io/malama-aina/images/components"
+const imageBasePath = "images/components"
 
 const imageList = {
     clothing: [
