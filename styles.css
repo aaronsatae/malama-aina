@@ -110,9 +110,15 @@ footer {
     max-width: 600px;
 }
 
-button {
+.btn {
     margin: 5px;
-    padding: 10px 15px;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+}
+
+.btn img {
+    height: 4vh;
 }
 
 #image-list {
