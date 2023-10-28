@@ -69,6 +69,9 @@
     <button onclick="reset()">
         초기화
     </button>
+    <button onclick="copyUrl()">
+        공유하기
+    </button>
 </div>
 <footer>
     <img class="divider" src="images/ui/divider.png">
@@ -116,6 +119,11 @@
             const element = document.getElementById(`${type}`);
             element.style.backgroundImage = `url(${defaultImages[type]})`;
         }
+    }
+
+    function copyUrl() {
+        // todo: url에 이미지 렌더링 정보 넣기
+        navigator.clipboard.writeText(window.location.href);
     }
 </script>
 </body>
