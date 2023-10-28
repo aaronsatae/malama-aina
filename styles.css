@@ -136,3 +136,13 @@ footer {
     height: 100px;
     margin: 5px;
 }
+
+body {
+    height: 100vh;
+}
+
+@media only screen and (max-device-width: 640px) {
+    body {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+}
