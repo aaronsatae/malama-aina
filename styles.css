@@ -13,8 +13,14 @@ header {
     height: auto;
 }
 
+header img {
+    display: flex;
+    margin: auto;
+}
+
 .main-title {
     width: 70vw;
+    max-width: 600px;
 }
 
 footer {
@@ -24,12 +30,18 @@ footer {
 
 .divider {
     width: 90%;
+    max-width: 800px;
+}
+
+.container {
+    max-width: 800px;
 }
 
 #character {
     width: 80vw;
-    max-width: 800px;
+    max-width: 500px;
     height: 80vw;
+    max-height: 500px;
     padding: 0;
     display: flex;
 }
@@ -124,7 +136,7 @@ footer {
 }
 
 .btn img {
-    height: 4vh;
+    height: 5vh;
 }
 
 #image-list {
