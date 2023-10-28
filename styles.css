@@ -132,9 +132,12 @@ footer {
 }
 
 #image-list img {
-    width: 100px;
-    height: 100px;
+    width: 20vh;
+    height: auto;
     margin: 5px;
+    border: solid 4px rgb(95, 126, 107);
+    border-radius: 3vh;
+    background-color: rgba(204, 188, 154, 0.6);
 }
 
 body {
