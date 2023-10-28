@@ -107,4 +107,19 @@ function displayImages(type) {
     }
 }
 
+function loadImages() {
+    const imageLoader = document.createElement("div");
+    document.body.appendChild(imageLoader);
+    for (const type of imageTypes) {
+        for (const image of imageList[type]) {
+            const img = document.createElement("img");
+            img.src = image;
+            img.style.display = "none";
+            imageLoader.appendChild(img);
+        }
+    }
+    imageLoader.remove();
+}
+
 initializeImageList();
+loadImages();
