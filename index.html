@@ -66,6 +66,9 @@
     <button onclick="takeshot()">
         이미지 다운로드
     </button>
+    <button onclick="reset()">
+        초기화
+    </button>
 </div>
 <footer>
     <img class="divider" src="images/ui/divider.png">
@@ -95,6 +98,24 @@
         }).then(function (blob) {
             saveAs(blob, 'malama-aina.png');
         });
+    }
+
+    function reset() {
+        const defaultImages = {
+            clothing: "images/components/clothing/clothing3.png",
+            eyesAndNose: "images/components/eyesAndNose/eyesAndNose2.png",
+            weapon: "images/components/weapon/weapon1.png",
+            eyebrow: "images/components/eyebrow/eyebrow1.png",
+            headAccessory: "images/components/blank.png",
+            facePaint: "images/components/blank.png",
+            hair: "images/components/blank.png",
+            necklace: "images/components/blank.png",
+        }
+
+        for (const type in defaultImages) {
+            const element = document.getElementById(`${type}`);
+            element.style.backgroundImage = `url(${defaultImages[type]})`;
+        }
     }
 </script>
 </body>
