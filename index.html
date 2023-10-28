@@ -99,7 +99,7 @@
                 transformOrigin: 'top left'
             }
         }).then(function (blob) {
-            saveAs(blob, 'malama-aina.png');
+            window.open(URL.createObjectURL(blob));
         });
     }
 
