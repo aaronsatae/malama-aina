@@ -35,6 +35,7 @@ footer {
 
 .container {
     max-width: 800px;
+    padding: 0;
 }
 
 #character {
@@ -125,6 +126,13 @@ footer {
 #menu {
     margin-top: 20px;
     max-width: 600px;
+    padding: 0 15px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#menu button {
+    display: inline-block;
 }
 
 .btn {
@@ -140,7 +148,7 @@ footer {
 }
 
 #image-list {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
 }
