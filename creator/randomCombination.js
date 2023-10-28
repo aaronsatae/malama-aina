@@ -7,7 +7,7 @@ const imageBasePath = path.join(__dirname, '/../images')
 const resultBasePath = './result';
 const componentsBasePath = imageBasePath + '/components';
 
-const templateString = fs.readFileSync(path.join(__dirname, '/../templates/v1.svg')).toString();
+const templateString = fs.readFileSync(path.join(__dirname, './templates/v1.svg')).toString();
 
 const excludeImageMap = {
     'eyesAndNose1': ['faceAccessory2', 'faceAccessory3'],
