@@ -14,7 +14,7 @@ header {
 }
 
 .main-title {
-    width: 80%;
+    width: 70vw;
 }
 
 footer {
@@ -23,12 +23,13 @@ footer {
 }
 
 .divider {
-    width: 80%;
+    width: 90%;
 }
 
 #character {
-    width: 50vh;
-    height: 50vh;
+    width: 80vw;
+    max-width: 800px;
+    height: 80vw;
     padding: 0;
     display: flex;
 }
@@ -116,6 +117,7 @@ footer {
 
 .btn {
     margin: 5px;
+    padding: 0;
     width: fit-content;
     background-color: transparent;
     border: none;
