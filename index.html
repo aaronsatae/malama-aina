@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://aaronsatae.github.io/malama-aina/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
     <title>당신의 인디언은?</title>
 </head>
 <body>
@@ -15,18 +17,20 @@
 </header>
 <div class="container text-center">
     <div id="character" class="my-4 container">
-        <div class="character-images" id="body"></div>
-        <div class="character-images" id="head"></div>
-        <div class="character-images" id="hand"></div>
-        <div class="character-images" id="clothing"></div>
-        <div class="character-images" id="mouth"></div>
-        <div class="character-images" id="eyesAndNose"></div>
-        <div class="character-images" id="facePaint"></div>
-        <div class="character-images" id="weapon"></div>
-        <div class="character-images" id="eyebrow"></div>
-        <div class="character-images" id="hair"></div>
-        <div class="character-images" id="necklace"></div>
-        <div class="character-images" id="headAccessory"></div>
+        <div id="capture">
+            <div class="character-images" id="body"></div>
+            <div class="character-images" id="head"></div>
+            <div class="character-images" id="hand"></div>
+            <div class="character-images" id="clothing"></div>
+            <div class="character-images" id="mouth"></div>
+            <div class="character-images" id="eyesAndNose"></div>
+            <div class="character-images" id="facePaint"></div>
+            <div class="character-images" id="weapon"></div>
+            <div class="character-images" id="eyebrow"></div>
+            <div class="character-images" id="hair"></div>
+            <div class="character-images" id="necklace"></div>
+            <div class="character-images" id="headAccessory"></div>
+        </div>
     </div>
     <div id="menu" class="my-4 container">
         <button id="eyesAndNose-button" class="btn btn-primary">눈과 코</button>
@@ -41,7 +45,29 @@
     </div>
     <div id="image-list" class="d-flex flex-wrap justify-content-center">
     </div>
+    <button onclick="takeshot()">
+        이미지 다운로드
+    </button>
 </div>
 <script src="https://aaronsatae.github.io/malama-aina/script.js"></script>
+
+
+<script type="text/javascript">
+
+    function takeshot() {
+        const element = document.getElementById('capture');
+        const scale = 3;
+        domtoimage.toBlob(element, {
+            width: element.clientWidth * scale,
+            height: element.clientHeight * scale,
+            style: {
+                transform: 'scale(' + scale + ')',
+                transformOrigin: 'top left'
+            }
+        }).then(function (blob) {
+            saveAs(blob, 'malama-aina.png');
+        });
+    }
+</script>
 </body>
 </html>
