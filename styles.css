@@ -25,17 +25,17 @@ body {
 
 #body {
     z-index: 0;
-    background-image: url("/images/components/body.png");
+    background-image: url("https://aaronsatae.github.io/malama-aina/images/components/body.png");
 }
 
 #head {
     z-index: 4;
-    background-image: url("/images/components/head.png");
+    background-image: url("https://aaronsatae.github.io/malama-aina/images/components/head.png");
 }
 
 #hand {
     z-index: 12;
-    background-image: url("/images/components/hand.png");
+    background-image: url("https://aaronsatae.github.io/malama-aina/images/components/hand.png");
 }
 
 #clothing {

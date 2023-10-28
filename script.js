@@ -1,14 +1,74 @@
-const imageTypes = ["clothing", "mouth", "eyesAndNose", "facePaint", "weapon", "eyebrow", "hair", "necklace", "headAccessory"];
+const imageTypes = [
+    "clothing", "mouth", "eyesAndNose", "facePaint", "weapon", "eyebrow", "hair", "necklace", "headAccessory"
+];
+
+const imageBasePath = "https://aaronsatae.github.io/malama-aina/images/components"
+
 const imageList = {
-    clothing: ["/images/components/clothing/clothing1.png", "/images/components/clothing/clothing2.png", "/images/components/clothing/clothing3.png"],
-    mouth: ["/images/components/mouth/mouth1.png", "/images/components/mouth/mouth2.png", "/images/components/mouth/mouth3.png"],
-    eyesAndNose: ["/images/components/eyesAndNose/eyesAndNose1.png", "/images/components/eyesAndNose/eyesAndNose2.png", "/images/components/eyesAndNose/eyesAndNose3.png"],
-    facePaint: ["/images/components/facePaint/facePaint1.png", "/images/components/facePaint/facePaint2.png", "/images/components/facePaint/facePaint3.png"],
-    weapon: ["/images/components/weapon/weapon1.png", "/images/components/weapon/weapon2.png", "/images/components/weapon/weapon3.png"],
-    eyebrow: ["/images/components/eyebrow/eyebrow1.png", "/images/components/eyebrow/eyebrow2.png", "/images/components/eyebrow/eyebrow3.png"],
-    hair: ["/images/components/hair/hair1.png", "/images/components/hair/hair2.png", "/images/components/hair/hair3.png"],
-    necklace: ["/images/components/necklace/necklace1.png", "/images/components/necklace/necklace2.png", "/images/components/necklace/necklace3.png"],
-    headAccessory: ["/images/components/headAccessory/headAccessory1.png", "/images/components/headAccessory/headAccessory2.png", "/images/components/headAccessory/headAccessory3.png"]
+    clothing: [
+        `${imageBasePath}/clothing/clothing1.png`,
+        `${imageBasePath}/clothing/clothing2.png`,
+        `${imageBasePath}/clothing/clothing3.png`,
+    ],
+    mouth: [
+        `${imageBasePath}/mouth/mouth1.png`,
+        `${imageBasePath}/mouth/mouth2.png`,
+        `${imageBasePath}/mouth/mouth3.png`,
+        `${imageBasePath}/mouth/mouth4.png`,
+        `${imageBasePath}/mouth/mouth5.png`,
+        `${imageBasePath}/mouth/mouth6.png`,
+        `${imageBasePath}/mouth/mouth7.png`,
+        `${imageBasePath}/mouth/mouth8.png`,
+        `${imageBasePath}/mouth/mouth9.png`,
+        `${imageBasePath}/mouth/mouth10.png`,
+    ],
+    eyesAndNose: [
+        `${imageBasePath}/eyesAndNose/eyesAndNose1.png`,
+        `${imageBasePath}/eyesAndNose/eyesAndNose2.png`,
+        `${imageBasePath}/eyesAndNose/eyesAndNose3.png`,
+        `${imageBasePath}/eyesAndNose/eyesAndNose4.png`,
+        `${imageBasePath}/eyesAndNose/eyesAndNose5.png`,
+        `${imageBasePath}/eyesAndNose/eyesAndNose6.png`,
+        `${imageBasePath}/eyesAndNose/eyesAndNose7.png`,
+    ],
+    facePaint: [
+        `${imageBasePath}/facePaint/facePaint1.png`,
+        `${imageBasePath}/facePaint/facePaint2.png`,
+        `${imageBasePath}/facePaint/facePaint3.png`,
+        `${imageBasePath}/facePaint/facePaint4.png`,
+    ],
+    weapon: [
+        `${imageBasePath}/weapon/weapon1.png`,
+        `${imageBasePath}/weapon/weapon2.png`,
+        `${imageBasePath}/weapon/weapon3.png`,
+        `${imageBasePath}/weapon/weapon4.png`,
+    ],
+    eyebrow: [
+        `${imageBasePath}/eyebrow/eyebrow1.png`,
+        `${imageBasePath}/eyebrow/eyebrow2.png`,
+        `${imageBasePath}/eyebrow/eyebrow3.png`,
+        `${imageBasePath}/eyebrow/eyebrow4.png`,
+        `${imageBasePath}/eyebrow/eyebrow5.png`,
+        `${imageBasePath}/eyebrow/eyebrow6.png`,
+    ],
+    hair: [
+        `${imageBasePath}/hair/hair1.png`,
+        `${imageBasePath}/hair/hair2.png`,
+        `${imageBasePath}/hair/hair3.png`,
+        `${imageBasePath}/hair/hair4.png`,
+        `${imageBasePath}/hair/hair5.png`,
+        `${imageBasePath}/hair/hair6.png`,
+        `${imageBasePath}/hair/hair7.png`,
+    ],
+    necklace: [
+        `${imageBasePath}/necklace/necklace1.png`,
+        `${imageBasePath}/necklace/necklace2.png`,
+    ],
+    headAccessory: [
+        `${imageBasePath}/headAccessory/headAccessory1.png`,
+        `${imageBasePath}/headAccessory/headAccessory2.png`,
+        `${imageBasePath}/headAccessory/headAccessory3.png`,
+    ]
 };
 
 function initializeImageList() {
