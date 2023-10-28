@@ -32,6 +32,7 @@ const imageList = {
         `${imageBasePath}/eyesAndNose/eyesAndNose7.png`,
     ],
     facePaint: [
+        `${imageBasePath}/blank.png`,
         `${imageBasePath}/facePaint/facePaint1.png`,
         `${imageBasePath}/facePaint/facePaint2.png`,
         `${imageBasePath}/facePaint/facePaint3.png`,
@@ -50,8 +51,10 @@ const imageList = {
         `${imageBasePath}/eyebrow/eyebrow4.png`,
         `${imageBasePath}/eyebrow/eyebrow5.png`,
         `${imageBasePath}/eyebrow/eyebrow6.png`,
+        `${imageBasePath}/blank.png`,
     ],
     hair: [
+        `${imageBasePath}/blank.png`,
         `${imageBasePath}/hair/hair1.png`,
         `${imageBasePath}/hair/hair2.png`,
         `${imageBasePath}/hair/hair3.png`,
@@ -61,10 +64,12 @@ const imageList = {
         `${imageBasePath}/hair/hair7.png`,
     ],
     necklace: [
+        `${imageBasePath}/blank.png`,
         `${imageBasePath}/necklace/necklace1.png`,
         `${imageBasePath}/necklace/necklace2.png`,
     ],
     headAccessory: [
+        `${imageBasePath}/blank.png`,
         `${imageBasePath}/headAccessory/headAccessory1.png`,
         `${imageBasePath}/headAccessory/headAccessory2.png`,
         `${imageBasePath}/headAccessory/headAccessory3.png`,
