@@ -40,14 +40,17 @@ body {
 
 #clothing {
     z-index: 1;
+    background-image: url("https://aaronsatae.github.io/malama-aina/images/components/clothing/clothing3.png");
 }
 
 #mouth {
     z-index: 7;
+    background-image: url("https://aaronsatae.github.io/malama-aina/images/components/mouth/mouth6.png");
 }
 
 #eyesAndNose {
     z-index: 8;
+    background-image: url("https://aaronsatae.github.io/malama-aina/images/components/eyesAndNose/eyesAndNose2.png");
 }
 
 #facePaint {
@@ -56,14 +59,17 @@ body {
 
 #weapon {
     z-index: 3;
+    background-image: url("https://aaronsatae.github.io/malama-aina/images/components/weapon/weapon1.png");
 }
 
 #eyebrow {
     z-index: 6;
+    background-image: url("https://aaronsatae.github.io/malama-aina/images/components/eyebrow/eyebrow1.png");
 }
 
 #hair {
     z-index: 9;
+    background-image: url("https://aaronsatae.github.io/malama-aina/images/components/hair/hair3.png");
 }
 
 #necklace {
