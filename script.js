@@ -86,6 +86,7 @@ function initializeImageList() {
             displayImages(type);
         });
     }
+    displayImages("eyesAndNose");
 }
 
 function displayImages(type) {
