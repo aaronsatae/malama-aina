@@ -27,9 +27,8 @@ footer {
 }
 
 #character {
-    width: 300px;
-    height: 300px;
-    border: solid black 1px;
+    width: 50vh;
+    height: 50vh;
     padding: 0;
     display: flex;
 }
@@ -47,6 +46,11 @@ footer {
     left: 0;
     top: 0;
     background-size: cover;
+}
+
+#background {
+    z-index: -1;
+    background-image: url("images/components/background.png");
 }
 
 #body {
