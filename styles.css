@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+#character {
+    width: 300px;
+    height: 300px;
+    border: solid black 1px;
+    position: relative;
+}
+
+#character .character-images {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+}
+
+#body {
+    z-index: 0;
+    background-image: url("/images/components/body.png");
+}
+
+#head {
+    z-index: 4;
+    background-image: url("/images/components/head.png");
+}
+
+#hand {
+    z-index: 12;
+    background-image: url("/images/components/hand.png");
+}
+
+#clothing {
+    z-index: 1;
+}
+
+#mouth {
+    z-index: 7;
+}
+
+#eyesAndNose {
+    z-index: 8;
+}
+
+#facePaint {
+    z-index: 5;
+}
+
+#weapon {
+    z-index: 3;
+}
+
+#eyebrow {
+    z-index: 6;
+}
+
+#hair {
+    z-index: 9;
+}
+
+#necklace {
+    z-index: 10;
+}
+
+#headAccessory {
+    z-index: 11;
+}
+
+#menu {
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+}
+
+#image-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#image-list img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
