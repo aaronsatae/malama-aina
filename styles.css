@@ -151,6 +151,9 @@ footer {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    height: 30vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #image-list img {
