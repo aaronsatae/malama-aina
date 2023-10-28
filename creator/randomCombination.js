@@ -4,7 +4,7 @@ import path from 'path';
 
 const __dirname = path.resolve();
 const imageBasePath = path.join(__dirname, '/../images')
-const resultBasePath = imageBasePath + '/result';
+const resultBasePath = './result';
 const componentsBasePath = imageBasePath + '/components';
 
 const templateString = fs.readFileSync(path.join(__dirname, '/../templates/v1.svg')).toString();
