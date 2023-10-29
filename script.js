@@ -94,6 +94,8 @@ function displayImages(type) {
     imageListContainer.innerHTML = "";
 
     for (const image of imageList[type]) {
+        const cropDiv = document.createElement("div");
+        cropDiv.classList.add("crop");
         const imgElement = document.createElement("img");
         imgElement.src = image;
         imgElement.addEventListener("click", () => {
@@ -102,8 +104,9 @@ function displayImages(type) {
             const style = element.style;
             style.backgroundImage = s;
         });
-
-        imageListContainer.appendChild(imgElement);
+        imgElement.classList.add(`${type}-img`);
+        cropDiv.appendChild(imgElement);
+        imageListContainer.appendChild(cropDiv);
     }
 }
 

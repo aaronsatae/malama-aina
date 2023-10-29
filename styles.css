@@ -160,12 +160,57 @@ footer {
     overflow-y: auto;
 }
 
-#image-list img {
+#image-list .crop {
     width: 27vw;
     height: 27vw;
+    overflow: hidden;
     border: solid 4px rgb(95, 126, 107);
     border-radius: 5vw;
     background-color: rgba(204, 188, 154, 0.6);
+}
+
+#image-list .eyesAndNose-img {
+    width: 250%;
+    margin: -65% 0 0 -45%;
+}
+
+#image-list .eyebrow-img {
+    width: 250%;
+    margin: -45% 0 0 -45%;
+}
+
+#image-list .mouth-img {
+    width: 250%;
+    margin: -95% 0 0 -50%;
+}
+
+#image-list .hair-img {
+    width: 120%;
+    margin: 0 0 0 -10%;
+}
+
+#image-list .clothing-img {
+    width: 110%;
+    margin: -10% 0 0 -10%;
+}
+
+#image-list .facePaint-img {
+    width: 120%;
+    margin: -15% 0 0 -5%;
+}
+
+#image-list .weapon-img {
+    width: 100%;
+}
+
+#image-list .necklace-img {
+    width: 200%;
+    margin: -90% 0 0 -55%;
+}
+
+#image-list .headAccessory-img {
+    width: 150%;
+    margin: -15% 0 0 -15%;
 }
 
 body {
