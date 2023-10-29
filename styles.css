@@ -31,7 +31,7 @@ footer {
 .divider {
     width: 90%;
     max-width: 800px;
-    margin: 2vw;
+    margin: 2vw auto;
 }
 
 .container {
