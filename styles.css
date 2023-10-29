@@ -150,9 +150,10 @@ footer {
 }
 
 #image-list {
+    max-width: 800px;
     margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 27vw);
+    grid-template-columns: repeat(auto-fill, 27%);
     grid-auto-rows: 27vw;
     justify-content: center;
     grid-gap: 3vw;
@@ -162,11 +163,13 @@ footer {
 }
 
 #image-list .crop {
-    width: 27vw;
-    height: 27vw;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
     overflow: hidden;
     border: solid 4px rgb(95, 126, 107);
-    border-radius: 5vw;
+    border-radius: 17%;
     background-color: rgba(204, 188, 154, 0.6);
 }
 
