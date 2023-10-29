@@ -6,25 +6,25 @@ const imageBasePath = "images/components"
 
 const imageList = {
     clothing: [
+        `${imageBasePath}/clothing/clothing3.png`,
         `${imageBasePath}/clothing/clothing1.png`,
         `${imageBasePath}/clothing/clothing2.png`,
-        `${imageBasePath}/clothing/clothing3.png`,
     ],
     mouth: [
+        `${imageBasePath}/mouth/mouth6.png`,
         `${imageBasePath}/mouth/mouth1.png`,
         `${imageBasePath}/mouth/mouth2.png`,
         `${imageBasePath}/mouth/mouth3.png`,
         `${imageBasePath}/mouth/mouth4.png`,
         `${imageBasePath}/mouth/mouth5.png`,
-        `${imageBasePath}/mouth/mouth6.png`,
         `${imageBasePath}/mouth/mouth7.png`,
         `${imageBasePath}/mouth/mouth8.png`,
         `${imageBasePath}/mouth/mouth9.png`,
         `${imageBasePath}/mouth/mouth10.png`,
     ],
     eyesAndNose: [
-        `${imageBasePath}/eyesAndNose/eyesAndNose1.png`,
         `${imageBasePath}/eyesAndNose/eyesAndNose2.png`,
+        `${imageBasePath}/eyesAndNose/eyesAndNose1.png`,
         `${imageBasePath}/eyesAndNose/eyesAndNose3.png`,
         `${imageBasePath}/eyesAndNose/eyesAndNose4.png`,
         `${imageBasePath}/eyesAndNose/eyesAndNose5.png`,
