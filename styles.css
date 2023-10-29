@@ -145,7 +145,8 @@ footer {
 }
 
 .btn img {
-    height: 5vh;
+    height: 10vw;
+    max-height: 3em;
 }
 
 #image-list {
