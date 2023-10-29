@@ -150,19 +150,21 @@ footer {
 
 #image-list {
     margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 27vw);
+    grid-auto-rows: 27vw;
+    justify-content: center;
+    grid-gap: 3vw;
     height: 30vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
 #image-list img {
-    width: 20vh;
-    height: auto;
-    margin: 5px;
+    width: 27vw;
+    height: 27vw;
     border: solid 4px rgb(95, 126, 107);
-    border-radius: 3vh;
+    border-radius: 5vw;
     background-color: rgba(204, 188, 154, 0.6);
 }
 
