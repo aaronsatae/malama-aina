@@ -14,7 +14,7 @@
     <img class="main-title" src="images/ui/main-title.png">
 </header>
 <div class="container text-center">
-    <div id="character" class="my-4 container">
+    <div id="character" class="my-2 container">
         <div id="capture">
             <div class="character-images">
                 <img id="background" src="images/components/background.png">
@@ -57,6 +57,17 @@
             </div>
         </div>
     </div>
+    <div id="button-list" class="container">
+        <button onclick="reset()" class="btn">
+            <img src="images/ui/button/reset.png">
+        </button>
+        <button onclick="takeshot()" class="btn">
+            <img src="images/ui/button/download.png">
+        </button>
+        <button onclick="copyUrl()" class="btn">
+            <img src="images/ui/button/share.png">
+        </button>
+    </div>
     <div id="menu" class="container">
         <button id="eyesAndNose-button" class="btn">
             <img src="images/ui/button/eyesAndNose.png"/>
@@ -88,15 +99,7 @@
     </div>
     <div id="image-list">
     </div>
-    <button onclick="takeshot()">
-        이미지 다운로드
-    </button>
-    <button onclick="reset()">
-        초기화
-    </button>
-    <button onclick="copyUrl()">
-        공유하기
-    </button>
+
 </div>
 <footer>
     <img class="divider" src="images/ui/divider.png">

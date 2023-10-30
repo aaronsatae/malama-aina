@@ -130,8 +130,19 @@ footer {
     z-index: 11;
 }
 
+#button-list {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#button-list img {
+    width: 20vw;
+    max-width: 100px;
+    height: auto;
+}
+
 #menu {
-    margin-top: 20px;
     max-width: 600px;
     padding: 0 15px;
     overflow: auto;
