@@ -60,42 +60,50 @@ footer {
     position: absolute;
     left: 0;
     top: 0;
-    background-size: cover;
+}
+
+.character-images img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.character-images img:not([src]) {
+    opacity: 0;
+}
+
+.character-images img[src="*"] {
+    opacity: 1;
 }
 
 #background {
     z-index: -1;
-    background-image: url("images/components/background.png");
 }
 
 #body {
     z-index: 0;
-    background-image: url("images/components/body.png");
 }
 
 #head {
     z-index: 4;
-    background-image: url("images/components/head.png");
 }
 
 #hand {
     z-index: 12;
-    background-image: url("images/components/hand.png");
 }
 
 #clothing {
     z-index: 1;
-    background-image: url("images/components/clothing/clothing3.png");
 }
 
 #mouth {
     z-index: 7;
-    background-image: url("images/components/mouth/mouth6.png");
 }
 
 #eyesAndNose {
     z-index: 8;
-    background-image: url("images/components/eyesAndNose/eyesAndNose2.png");
 }
 
 #facePaint {
@@ -104,12 +112,10 @@ footer {
 
 #weapon {
     z-index: 3;
-    background-image: url("images/components/weapon/weapon1.png");
 }
 
 #eyebrow {
     z-index: 6;
-    background-image: url("images/components/eyebrow/eyebrow1.png");
 }
 
 #hair {

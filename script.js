@@ -100,9 +100,7 @@ function displayImages(type) {
         imgElement.src = image;
         imgElement.addEventListener("click", () => {
             const element = document.getElementById(`${type}`);
-            const s = `url(${image})`;
-            const style = element.style;
-            style.backgroundImage = s;
+            element.src = image;
         });
         imgElement.classList.add(`${type}-img`);
         cropDiv.appendChild(imgElement);

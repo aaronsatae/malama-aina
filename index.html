@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <title>당신의 인디언은?</title>
 </head>
 <body>
@@ -17,19 +16,45 @@
 <div class="container text-center">
     <div id="character" class="my-4 container">
         <div id="capture">
-            <div class="character-images" id="background"></div>
-            <div class="character-images" id="body"></div>
-            <div class="character-images" id="head"></div>
-            <div class="character-images" id="hand"></div>
-            <div class="character-images" id="clothing"></div>
-            <div class="character-images" id="mouth"></div>
-            <div class="character-images" id="eyesAndNose"></div>
-            <div class="character-images" id="facePaint"></div>
-            <div class="character-images" id="weapon"></div>
-            <div class="character-images" id="eyebrow"></div>
-            <div class="character-images" id="hair"></div>
-            <div class="character-images" id="necklace"></div>
-            <div class="character-images" id="headAccessory"></div>
+            <div class="character-images">
+                <img id="background" src="images/components/background.png">
+            </div>
+            <div class="character-images">
+                <img id="body" src="images/components/body.png">
+            </div>
+            <div class="character-images">
+                <img id="head" src="images/components/head.png">
+            </div>
+            <div class="character-images">
+                <img id="hand" src="images/components/hand.png">
+            </div>
+            <div class="character-images">
+                <img id="clothing">
+            </div>
+            <div class="character-images">
+                <img id="mouth">
+            </div>
+            <div class="character-images">
+                <img id="eyesAndNose">
+            </div>
+            <div class="character-images">
+                <img id="facePaint">
+            </div>
+            <div class="character-images">
+                <img id="weapon">
+            </div>
+            <div class="character-images">
+                <img id="eyebrow">
+            </div>
+            <div class="character-images">
+                <img id="hair">
+            </div>
+            <div class="character-images">
+                <img id="necklace">
+            </div>
+            <div class="character-images">
+                <img id="headAccessory">
+            </div>
         </div>
     </div>
     <div id="menu" class="container">
@@ -90,16 +115,12 @@
 <script type="text/javascript">
     function takeshot() {
         const element = document.getElementById('capture');
-        const scale = 3;
-        domtoimage.toBlob(element, {
-            width: element.clientWidth * scale,
-            height: element.clientHeight * scale,
-            style: {
-                transform: 'scale(' + scale + ')',
-                transformOrigin: 'top left'
-            }
-        }).then(function (blob) {
-            window.open(URL.createObjectURL(blob));
+        html2canvas(element, {backgroundColor: null}).then(canvas => {
+            let a = document.createElement('a');
+            // toDataURL defaults to png, so we need to request a jpeg, then convert for file download.
+            a.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+            a.download = 'malamaaina.png';
+            a.click();
         });
     }
 
@@ -118,9 +139,11 @@
 
         for (const type in defaultImages) {
             const element = document.getElementById(`${type}`);
-            element.style.backgroundImage = `url(${defaultImages[type]})`;
+            element.src = defaultImages[type];
         }
     }
+
+    reset();
 
     function copyUrl() {
         // todo: url에 이미지 렌더링 정보 넣기
