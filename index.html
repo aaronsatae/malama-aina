@@ -7,14 +7,51 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <title>당신의 인디언은?</title>
+    <script>
+        document.oncontextmenu = function (e) {
+            if (e.target.nodeName === "IMG" && !e.target.classList.contains('final-image')) {
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script>
+        function absorbEvent_(event) {
+            var e = event || window.event;
+            e.preventDefault && e.preventDefault();
+            e.stopPropagation && e.stopPropagation();
+            e.cancelBubble = true;
+            e.returnValue = false;
+            return false;
+        }
+
+        function preventLongPressMenu(node) {
+            // node.ontouchstart = absorbEvent_;
+            // node.ontouchmove = absorbEvent_;
+            // node.ontouchend = absorbEvent_;
+            // node.ontouchcancel = absorbEvent_;
+        }
+
+        function init() {
+            const elementsByTagName = document.getElementsByTagName('img');
+            for (const element of elementsByTagName) {
+                if (element.classList.contains('final-image')) {
+                    continue;
+                }
+                element.addEventListener('contetxmenu', function (e) {
+                    e.preventDefault();
+                });
+                // preventLongPressMenu(element);
+            }
+        }
+    </script>
 </head>
-<body>
-<header oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydownn="return false">
+<body onload="init()">
+<header>
     <img class="divider" src="images/ui/divider.png">
     <img class="main-title" src="images/ui/main-title.png">
 </header>
-<div class="container text-center" oncontextmenu="return false" onselectstart="return false" ondragstart="return false"
-     onkeydownn="return false">
+<div class="container text-center">
     <div id="character" class="my-2 container">
         <div id="capture">
             <div class="character-images">
@@ -105,7 +142,7 @@
     </div>
 
 </div>
-<footer oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydownn="return false">
+<footer>
     <img class="divider" src="images/ui/divider.png">
     <img class="copyright" src="images/ui/copyright.png">
 </footer>
@@ -119,8 +156,7 @@
         <div id="modal-image">
         </div>
         <div id="modal-footer">
-            <a class="btn" id="modal-button" oncontextmenu="return false" onselectstart="return false"
-               ondragstart="return false" onkeydownn="return false">
+            <a class="btn" id="modal-button">
                 <img src="images/ui/button/imageSave.png">
             </a>
             <br>
@@ -150,13 +186,17 @@
         html2canvas(element, {backgroundColor: null, windowWidth: 500, windowHeight: 500}).then(canvas => {
             const modalImage = document.getElementById('modal-image');
             modalImage.innerHTML = "";
-            modalImage.appendChild(canvas);
+            const imageDataUrl = canvas.toDataURL("image/png");
+            const image = document.createElement("img");
+            image.src = imageDataUrl;
+            image.classList.add('final-image');
+            modalImage.appendChild(image);
 
             const modal = document.getElementById('modal');
             modal.style.display = "block";
 
             const modalButton = document.getElementById('modal-button');
-            modalButton.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+            modalButton.href = imageDataUrl.replace("image/png", "image/octet-stream");
             modalButton.download = 'malamaaina.png';
         });
     }
@@ -202,6 +242,7 @@
         modalImage.innerHTML = "";
     }
 
+    init()
 </script>
 </body>
 </html>

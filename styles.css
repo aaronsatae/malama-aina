@@ -290,7 +290,7 @@ body {
     position: relative;
 }
 
-#modal-image canvas {
+#modal-image img {
     margin: 10px auto;
     width: 100% !important;
     height: auto !important;
