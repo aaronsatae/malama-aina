@@ -147,7 +147,7 @@
 <script type="text/javascript">
     function takeshot() {
         const element = document.getElementById('capture');
-        html2canvas(element, {backgroundColor: null}).then(canvas => {
+        html2canvas(element, {backgroundColor: null, windowWidth: 500, windowHeight: 500}).then(canvas => {
             const modalImage = document.getElementById('modal-image');
             modalImage.innerHTML = "";
             modalImage.appendChild(canvas);
