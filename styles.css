@@ -28,6 +28,16 @@ footer {
     height: auto;
 }
 
+footer img {
+    margin: auto;
+}
+
+.copyright {
+    width: 60%;
+    max-width: 400px;
+    margin-bottom: 3vw;
+}
+
 .divider {
     width: 90%;
     max-width: 800px;
