@@ -62,6 +62,7 @@ footer img {
     width: 100%;
     height: auto;
     position: relative;
+    overflow: hidden;
 }
 
 #character .character-images {
@@ -138,6 +139,12 @@ footer img {
 
 #headAccessory {
     z-index: 11;
+}
+
+#instagram {
+    z-index: 100;
+    left: 1.5vw;
+    top: 1.5vw;
 }
 
 #button-list {
